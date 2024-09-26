@@ -1,3 +1,5 @@
+
+
 body, html {
     margin: 0;
     padding: 0;
@@ -32,7 +34,7 @@ body, html {
 }
 
 .add-task input {
-    width: 70%; /* Default width for input */
+    width: 70%;
     padding: 10px;
     border: 1px solid #34495e;
     border-radius: 4px;
@@ -60,29 +62,29 @@ body, html {
 
 /* Container for the task-list with fixed height and custom scroll bar */
 .task-list-container {
-    max-height: 300px;
+    max-height: 300px; 
     overflow-y: auto; 
     margin-bottom: 20px; 
 }
 
-
+/* Customize the scroll bar */
 .task-list-container::-webkit-scrollbar {
-    width: 12px; 
+    width: 12px;
 }
 
 .task-list-container::-webkit-scrollbar-track {
-    background: #34495e; 
+    background: #34495e;
     border-radius: 10px;
 }
 
 .task-list-container::-webkit-scrollbar-thumb {
-    background: #3498db; 
-    border-radius: 10px; 
-    border: 2px solid #2c3e50; 
+    background: #3498db;
+    border-radius: 10px;
+    border: 2px solid #2c3e50;
 }
 
 .task-list-container::-webkit-scrollbar-thumb:hover {
-    background: #2980b9; 
+    background: #2980b9;
 }
 
 .task-list {
@@ -101,6 +103,7 @@ body, html {
     border-radius: 5px;
     background: #3b4b5b;
     cursor: pointer;
+    position: relative; 
 }
 
 .task-list li div {
@@ -118,11 +121,14 @@ body, html {
     cursor: pointer;
 }
 
+/* Style for the delete button inside the task list */
 .task-list li button {
     background: none;
     border: none;
     color: #e74c3c;
     cursor: pointer;
+    position: absolute;
+    right: 15px; 
 }
 
 .task-list li button:hover {
@@ -147,11 +153,11 @@ body, html {
 /* Responsive styling for medium devices */
 @media only screen and (max-width: 768px) {
     .container {
-        width: 55%;
+        width: 62%;
     }
 
     .add-task input {
-        width: 70%;
+        width: 65%; 
     }
 
     .add-task button {
@@ -160,50 +166,37 @@ body, html {
 }
 
 /* Responsive styling for small devices */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 500px) {
     .container {
-        width: 70%; 
+        width: 75%;
     }
 
     .add-task input {
-        width: 70%; 
+        width: 60%; 
     }
 
-    .add-task button {
-        width: auto; 
+    .task-list li span {
+        width: 150px;
+    }
+
+    .task-list li button {
+        right: 10px; 
+        font-size: 14px; 
     }
 }
 
 /* Responsive styling for extra small devices */
-@media only screen and (max-width: 470px) {
-    .container {
-        width: 60%; 
-    }
-
+@media only screen and (max-width: 400px) {
     .add-task input {
         width: 55%; 
     }
 
-    .add-task button {
-        width: auto; 
-    }
-}
-
-@media only screen and (max-width: 380px) {
-
-    .container {
-        width: 65%; 
+    .task-list li span {
+        width: 130px; 
     }
 
-    .add-task input {
-        width: 40%; 
-    }
-
-    .add-task input {
-        width: 52%; 
-    }
-
-    .add-task button {
-        width: auto; 
+    .task-list li button {
+        right: 8px; 
+        font-size: 12px; 
     }
 }
