@@ -162,11 +162,11 @@ body, html {
 /* Responsive styling for small devices */
 @media only screen and (max-width: 600px) {
     .container {
-        width: 55%; 
+        width: 70%; 
     }
 
     .add-task input {
-        width: 60%; 
+        width: 70%; 
     }
 
     .add-task button {
@@ -176,8 +176,12 @@ body, html {
 
 /* Responsive styling for extra small devices */
 @media only screen and (max-width: 470px) {
+    .container {
+        width: 60%; 
+    }
+
     .add-task input {
-        width: 50%; 
+        width: 55%; 
     }
 
     .add-task button {
@@ -187,12 +191,16 @@ body, html {
 
 @media only screen and (max-width: 380px) {
 
+    .container {
+        width: 65%; 
+    }
+
     .add-task input {
         width: 40%; 
     }
 
     .add-task input {
-        width: 40%; 
+        width: 52%; 
     }
 
     .add-task button {
