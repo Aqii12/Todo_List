@@ -111,10 +111,30 @@ body, html {
     align-items: center;
 }
 
-.task-list li span {
+/* .task-list li span {
     margin-left: 10px;
     color: #ecf0f1;
     width: 250px; 
+} */
+
+.task-list li span {
+    margin-left: 10px;
+    color: #ecf0f1;
+    width: 280px; 
+    overflow: hidden; 
+    white-space: nowrap; 
+    text-overflow: ellipsis; 
+    display: inline-block; 
+    transition: all 0.3s ease-in-out;
+}
+
+
+/* Class to show the full text on click */
+.task-list li span.expanded {
+    white-space: normal; 
+    overflow: visible; 
+    text-overflow: unset; 
+    word-wrap: break-word; 
 }
 
 .task-list li input[type="checkbox"] {
@@ -153,11 +173,20 @@ body, html {
 /* Responsive styling for medium devices */
 @media only screen and (max-width: 768px) {
     .container {
-        width: 62%;
+        width: 75%;
     }
 
     .add-task input {
         width: 65%; 
+    }
+
+    .task-list li button {
+        right: 10px; 
+        font-size: 14px; 
+    }
+
+    .task-list li span {
+        width: 150px;
     }
 
     .add-task button {
