@@ -62,9 +62,9 @@ body, html {
 
 /* Container for the task-list with fixed height and custom scroll bar */
 .task-list-container {
-    max-height: 300px; 
+    max-height: 250px; 
     overflow-y: auto; 
-    margin-bottom: 20px; 
+    margin-bottom: 12px; 
 }
 
 /* Customize the scroll bar */
@@ -74,13 +74,21 @@ body, html {
 
 .task-list-container::-webkit-scrollbar-track {
     background: #34495e;
-    border-radius: 10px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
 }
 
 .task-list-container::-webkit-scrollbar-thumb {
     background: #3498db;
-    border-radius: 10px;
+    border-radius: 8px;
     border: 2px solid #2c3e50;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
 }
 
 .task-list-container::-webkit-scrollbar-thumb:hover {
@@ -98,7 +106,7 @@ body, html {
     justify-content: space-between;
     align-items: center;
     padding: 15px;
-    margin: 5px 0; 
+    margin: 2px 0; 
     border: 1px solid #34495e;
     border-radius: 5px;
     background: #3b4b5b;
